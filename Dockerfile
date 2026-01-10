@@ -2,11 +2,14 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
+ENV PYTHONPATH=/app
+
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY app.py .
 COPY stock_data.py .
+COPY tests ./tests
 
 EXPOSE 8501
 
