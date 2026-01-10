@@ -1,0 +1,25 @@
+name: CI
+
+# トリガー：push,PR
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # ① リポジトリをチェックアウト
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ② Docker イメージをビルド
+      - name: Build Docker image
+        run: docker build -t stock-app:ci .
+
+      # ③ pytest を実行
+      - name: Run tests
+        run: docker run --rm stock-app:ci pytest
