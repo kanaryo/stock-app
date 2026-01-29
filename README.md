@@ -10,30 +10,29 @@
 ### 要件定義
 以下を構築する
 - アプリケーション要件
-  - Streamlit（Python）
-  - 外部APIで株価取得
-  - グラフ描画
-  - RDS連携
+  - [x] Streamlit（Python）
+  - [ ] 外部APIで株価取得
+  - [x] グラフ描画
+  - [ ] RDS連携
 
 - 実行環境
-  - ローカル：Docker Desktop
-  - 本番：EC2 + Docker
-  - コンテナイメージ管理：Amazon ECR
+  - [x] ローカル：Docker Desktop
+  - [x] 本番：EC2 + Docker
+  - [x] コンテナイメージ管理：Amazon ECR
 
 - CI/CD
-  - GitHub Actions によるCI/CD構築
-  - main ブランチへの push をトリガーに自動実行
-  - pytest による自動テスト
-  - Docker イメージのビルドおよび ECR への push
-  - EC2 でのコンテナ更新・再起動による自動デプロイ
+  - [x] GitHub Actions によるCI/CD構築
+  - [x] main ブランチへの push をトリガーに自動実行
+  - [x] pytest による自動テスト
+  - [x] Docker イメージのビルドおよび ECR への push
+  - [x] EC2 でのコンテナ更新・再起動による自動デプロイ
 
 - インフラ・ネットワーク
-  - ALB 経由でのアプリケーション公開
-  - セキュリティグループによる通信制御
-  - IAM Role を利用した安全な AWS リソースアクセス
+  - [x] ALB 経由でのアプリケーション公開
+  - [x] セキュリティグループによる通信制御
+  - [x] IAM Role を利用した安全な AWS リソースアクセス
 
 - セキュリティ・運用
-  - ACM による SSL/TLS 証明書管理
-  - Route53 による独自ドメイン設定
-  - HTTP → HTTPS のリダイレクト対応
-
+  - [x] ACM による SSL/TLS 証明書管理
+  - [x] Route53 による独自ドメイン設定
+  - [x] HTTP → HTTPS のリダイレクト対応
