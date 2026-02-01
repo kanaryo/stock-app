@@ -8,7 +8,7 @@ st.set_page_config(page_title="Stock App", layout="wide")
 st.title("📈 Stock App")
 st.write("Hello Streamlit!")
 
-symbol = st.selectbox("銘柄", ["NFLX"])
+symbol = st.selectbox("銘柄", ["GOOGL"])
 
 data = get_dummy_stock_prices(symbol)
 df = pd.DataFrame(data)

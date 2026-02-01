@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    container_name: stock-app
+
+    ports:
+      - "8501:8501"
+
+    volumes:
+      - .:/app
+
+    command: streamlit run app.py --server.address=0.0.0.0
