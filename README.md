@@ -15,6 +15,9 @@
 - User → Route53 → ALB → EC2(Docker) → Streamlit
 - GitHub Actions → ECR → EC2 自動デプロイ
 
+### AWSインフラ構成
+<img width="1301" height="561" alt="AWSインフラ構成図_01 drawio" src="https://github.com/user-attachments/assets/045d64d9-f8d4-43ab-8713-d53c2efba9f2" />
+
 ### 技術スタック
 - Python / Streamlit / yfinance
 - Docker / docker-compose
