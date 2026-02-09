@@ -30,7 +30,7 @@
   - [x] Streamlit（Python）
   - [X] 外部APIで株価取得
   - [x] グラフ描画
-  - [ ] RDS連携
+  - [ ] RDB連携
 
 - 実行環境
   - [x] ローカル：Docker Desktop
