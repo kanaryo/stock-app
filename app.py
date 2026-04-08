@@ -7,7 +7,7 @@ from stock_data import get_stock_prices
 st.set_page_config(page_title="Stock App", layout="wide")
 
 st.title("📈 Stock App")
-st.write("Hello Streamlit! test")
+st.write("Hello Streamlit!")
 
 symbol = st.selectbox(
     "銘柄",
