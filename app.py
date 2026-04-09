@@ -7,7 +7,7 @@ from stock_data import get_stock_prices
 st.set_page_config(page_title="Stock App", layout="wide")
 
 st.title("📈 Stock App")
-st.write("Hello Shibuya!")
+st.write("Hello Ikebukuro!")
 
 symbol = st.selectbox(
     "銘柄",
